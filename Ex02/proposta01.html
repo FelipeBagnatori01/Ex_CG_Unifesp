@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta 01</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            border: 2px solid #ddd;
+        }
+        td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+            vertical-align: top;
+            background-color: #f9f9f9;
+        }
+        h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 14px;
+        }
+        canvas {
+            border: 1px solid #999;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Keyboard and Mouse interation</h1>
+    
+    <table>
+        <!-- First Row: Basic Shapes -->
+        <tr>
+            <td>
+                <h3>1 - Red; 2 - green; 3 - Blue; 4 - Magenta; 5 - Yellow; 6 - Orange; 7 - Light green; 8 - Dark green; 9 - Purple; 0 - Random<br>
+                    <br>Mouse click changes vertex location<br>
+                    <br>Press E to control line thickness from 0 to 9; Press K to change color from 0 to 9</h3>
+                <canvas id="glCanvas" width="500" height="500"></canvas>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Load all JavaScript files -->
+    <script src="proposta01.js">
+    </script>
+</body>
+</html>
