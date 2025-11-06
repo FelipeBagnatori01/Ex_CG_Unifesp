@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL 3D Scene</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #111827;
+            font-family: Arial, sans-serif;
+        }
+        .controls {
+            margin-bottom: 20px;
+            color: white;
+            font-size: 14px;
+            background-color: #1f2937;
+            padding: 16px;
+            border-radius: 8px;
+        }
+        .controls-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        canvas {
+            border: 2px solid #374151;
+            border-radius: 8px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <div class="controls-title">Controls:</div>
+        <div>W/A/S/D - Move Forward/Left/Back/Right</div>
+        <div>Q/E - Move Up/Down</div>
+        <div>Arrow Keys - Rotate Camera</div>
+    </div>
+    <canvas id="glCanvas" width="800" height="600"></canvas>
+
+    <script src="cube.js"></script>
+</body>
+</html>
